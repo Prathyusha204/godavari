@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:url('godavari5.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+nav{
+    width:100%;
+    height: 15vh;
+    background:rgba(0,0,0,0.6);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+.logo{
+    width:25%;
+    text-align: center;
+}
+.menu{
+    width:40%;
+    display: flex;
+    justify-content: space-around; 
+  
+}
+.button1{
+    width:25%;
+    /*text-decoration: none;*/
+    /*color:white;*/
+    font-weight: bold;
+    background-color:white;
+    color: black;
+}
+.button1:hover{
+    background:darkcyan;
+    color:white;
+}
+.button2{
+    width:25%;
+    text-decoration: none;
+    /*color:white;*/
+    font-weight: bold;
+    background:darkcyan;
+    color:white;
+}
+.button2:hover{
+    background-color: white;
+    color: black;
+}
+main{
+    width:100%;
+    height: 80vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   color: white;
+}
+
+h3{
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing:3px ;
+    text-shadow: 1px 1px 2px black;
+    
+}
+h1{
+    margin: 30px 0 20px 0;
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+p{
+    font-size: 25px;
+    color:whitesmoke;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: white;
+    transition: all .6s ease;
+}
+.change_content:after{
+ content: '';
+ animation: changetext 10s infinite linear;
+ color:darkcyan;
+}
+
+@keyframes changetext{
+    0%{
+        content:"Rajamahendravaram" ;
+    }
+    20%{
+        content: "bhimavaram";
+    }
+    35%{
+        content: " Vijayawada";
+    }
+    60%{
+        content: "Konaseema";
+    }
+    80%{
+        content: "akividu ";
+    }
+    100%{
+        content: "kakinada";
+    }
+}
